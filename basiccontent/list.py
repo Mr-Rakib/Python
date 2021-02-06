@@ -15,8 +15,8 @@
         min(list)
         len(list)
         list.append(10) -> add to the end
-        list.insert(index) -> add to the index
-        list.remove(9) -> remove 9 from the list
+        list.insert(index, value) -> add to the index
+        list.remove(value) -> remove value from the list
         list.pop() -> remove the last element from the list
 
     **
@@ -25,4 +25,22 @@
         - when it just 1 value use extra ', ' here : ex:- (1,)
 """
 
-#To Do here
+#List
+
+list = [1,2,3,4,5,6,7,8,9,10];
+print(list)
+print(list[::-1])
+print(list[::-1][1])
+list.append(11)
+print(list[::-1])
+print(list.insert(1, 10))
+print(list[::])
+list.remove(9);
+print(list[::])
+list.pop()
+print(list[::])
+
+#tuple -> immutable: can not change the value
+tuple = (1,2,3,4,5)
+print(tuple[::2])
+print(tuple[::-1])
